@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     transition: ease 0.3s;
+    font-family: Inter;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
     height: 100vh;
     width: 100vw;
 }
-.header {
+.top-header {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -41,7 +42,6 @@ body {
     animation-play-state: paused;
 }
 
-
 @keyframes float {
     0% {
         transform: translateY(0);
@@ -50,4 +50,52 @@ body {
         transform: translateY(-10px);
         
     }
+}
+
+/*Tweede pagina */
+#main {
+    background-color: black;
+    color: white;
+    height: 100%;
+    align-items: center;
+}
+.main-header {
+    padding:  10px 0px 10px 10px;
+    background-color: #ffffff;
+}
+.logo2 {
+    height: 150px;
+    width: auto;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form input {
+    outline: none;
+    padding: 10px;
+    width: 500px;
+    height: 50px;
+    border-radius: 4px;
+}
+form label {
+    padding: 10px 0;
+    font-size: 20px;
+}
+form button {
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-variant: all-small-caps;
+    font-size: 16px;
+}
+form button:hover {
+    background-color: rgb(165, 163, 163);
 }
